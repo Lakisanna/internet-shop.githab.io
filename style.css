@@ -1,0 +1,1033 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,300,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif; /*задали шрифт всей странице*/
+}
+
+html, body {
+    height: 100%;
+}
+
+.container {    /*вся страница отцентрована*/
+    width: 1366px;
+    margin: 0 auto;
+    min-height: 100%;
+       
+}
+
+.header .homePage{
+    padding-left: 98px;
+    height: 800px;
+    background-image: url(images/slider-img.jpg);
+    margin-bottom: 120px;
+}
+
+.header .headerProduct, .header .headerComtact {
+    padding-left: 98px;
+    height: 360px;
+    background-color: #f5f5f5;
+    margin-bottom: 71px;
+}
+
+.header .productDealis {
+    padding-left: 98px;
+    height: 120px;    
+}
+
+
+
+.header .logo {              /* Style for "logo" */    
+    /*margin-left: 98px;    /*позиционирование  отступ слева задал падингом в хедере*/
+    margin-top: 63px;
+}
+
+.menu {
+    float: right;    /*расположили меню справа*/
+    margin-right: 211px;   /*позиционирование*/
+    margin-top: 67px;
+}
+
+.menu li {      /* Style for "HOME     P" */    
+    float: left;  /* в строчку*/
+    list-style-type: none;   /*убрали точки*/
+}
+
+.menu li a {    
+    color: #8c8c8c;
+    font-size: 14px; /*приближение из-за подстановки шрифтов*/
+    font-weight: 300;
+    line-height: 27px;  /*приближение из-за подстановки шрифтов*/
+    text-decoration: none; /*убрали нижнее почеркивание*/
+    display: block; /*блоками*/
+    padding: 0 10px;  /*отступы внутри блоков меню справа и слева 20px*/
+}
+
+.menu li a:hover{
+    color: #212121;
+    border-bottom: 1px solid #6c6c6c;  /*черта */
+}
+
+.searchButton {   /*лупа поиска*/
+    position: absolute;
+    height: 23px;
+    width: 23px;
+    margin-top: 70px;
+    margin-left: 880px;
+}
+
+.searchButton:hover {
+    transform: scale(1.1);
+}
+
+.searchButton:active {
+    transform: scale(1.5);
+}
+
+.homePage .sliderContent {
+    width: 458px;  /*ширина блока текста слайдера*/ 
+    float: left;   /*блок не занимает всю ширину*/
+    margin-top: 288px;  /*отталкивается от логотипа*/
+    /*margin-left: 98px;  /*отступ слева    отступ слева задал падингом в хедере*/    
+}
+
+.headerProduct .sliderContent {
+    width: 575px;  /*ширина блока текста слайдера*/ 
+    float: left;   /*блок не занимает всю ширину*/
+    margin-top: 168px;  /*отталкивается от логотипа*/
+    /*margin-left: 98px;  /*отступ слева    отступ слева задал падингом в хедере*/    
+}
+
+.headerComtact .sliderContent {
+    width: 575px;  /*ширина блока текста слайдера*/ 
+    float: left;   /*блок не занимает всю ширину*/
+    margin-top: 168px;  /*отталкивается от логотипа*/
+    /*margin-left: 98px;  /*отступ слева    отступ слева задал падингом в хедере*/    
+}
+
+.sliderContent h3 {  /* Style for "TRENDING" */    
+    color: #43a047;
+    font-size: 18px; 
+    font-weight: 700;
+    line-height: 48px; 
+    margin-bottom: 2px;
+}
+
+.sliderContent h1 {   /* Style for "Fishnet Chair" */
+    color: #212121;
+    font-size: 62px;
+    font-weight: 200;
+    line-height: 72px;
+    letter-spacing: -3px;   /*расстояние между буквами*/
+    
+}
+
+.homePage .sliderContent h1{
+    text-transform: uppercase;  /*все буквы верхний регистр*/
+    letter-spacing: -3px;   /*расстояние между буквами*/
+    margin-bottom: 24px;
+}
+
+.sliderContent p {    /* Style for "Seat and back..." */
+    color: #6c6c6c;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+    text-align: left;
+    letter-spacing: -0.2px;  /*расстояние между буквами*/
+    margin-bottom: 27px;
+}
+
+.orderUs {  /*кнопка ордер*/
+    display: block;
+    width: 212px;
+    height: 45px;
+    box-shadow: 0 2px 5px 1px rgba(33, 33, 33, 0.35); /*тень*/
+    border-radius: 23px;    /*закругления кнопки*/
+    background-color: #ffffff;
+    text-decoration: none; /*убрали нижнее почеркивание*/
+    text-align: center; /*текст по центру кнопки*/    
+    line-height: 45px;   /*выравнивание по высоте, высота строки такая же, каки высота блока кнопки*/ 
+    color: #212121;   /*цвет текста*/
+    font-size: 18px;  /*размер текста*/
+    font-weight: 700; /*жирность текста*/
+    text-transform: uppercase; /*все буквы верхний регистр*/
+    letter-spacing: 3.6px;  /*расстояние между буквами*/    
+}
+
+.orderUs:hover {  /*кнопка ордер при наведении*/
+    background: #ffffff url('images/arrow.png') no-repeat 173px 16px; /*цвет фона + стрелка + не повторять + отступ слева по х и сверху по y*/
+    box-shadow: none;
+}
+
+.orderUs:active {
+    color: #1e88e5;
+}
+
+.header .leaf {    
+    margin-top: 656px;   
+    margin-left: 525px;
+}
+
+.hotDeals .leaf { 
+    float: left;
+    position: absolute;
+    margin-top: 740px;   
+    margin-left: 525px;
+}
+
+.leaf li {
+    float: left;
+    list-style-type: none;
+    height: 40px;
+    width: 40px;    
+}
+
+.leaf li a {
+    display: block;
+    top: 5px;
+    left: 5px;
+    width: 30px;
+    height: 30px;    
+    background-color: #c7c7c7;
+    border-radius: 15.0px;    
+}
+
+.leaf li a:hover {
+    transform: scale(1.3);    
+    background-color: #212121;    
+}
+
+/*------------------featuredProduct-------------------*/
+.featuredProduct {  
+    height: 369px;
+    width: 1171px;
+    margin: 0 auto;
+    margin-bottom: 120px;    
+}
+
+.menu1 {
+    position: absolute;
+    float: left;    /*расположили меню слева*/
+}
+
+.menu1 li {
+    float: left;  /* в строчку*/
+    list-style-type: none;   /*убрали точки*/
+}
+
+.menu1 li a {
+    text-decoration: none; /*убрали нижнее почеркивание*/
+    display: block; /*блоками*/
+    color: #6c6c6c;        
+}
+
+.tabControll .menu1 li a,
+.tabControll2 .menu1 li a{
+    border-bottom: 1px solid #6c6c6c; /*граница кнопки в статике*/
+}
+
+.tabControll2 {
+    width: 1171px;
+    margin: 0 auto;
+    height: 35px;
+    margin-bottom: 50px; 
+}
+
+.tabControll3 {    
+    height: 70px;
+    background-color: #f4f4f4;
+    margin-bottom: 72px;
+}
+
+.tabControll3 ul {
+    float: left;
+    position: relative;
+    left: 50%;
+    margin-top: 24px;
+}
+
+.tabControll3 ul li {
+    display: block;
+    float: left;
+    position: relative;
+    right:  50%;
+}
+
+.tabControll .menu1 li a {    
+    font-size: 36px;
+    font-weight: 700;
+    height: 49px;    /*высота кнопок*/    
+    padding-left: 9px;
+    padding-right: 20px;
+}
+
+.tabControll2 .menu1 li a,
+.tabControll3 .menu1 li a{    
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    height: 35px;    /*высота кнопок*/   
+    padding-left: 7px;
+    padding-right: 30px;    
+}
+
+.tabControll .menu1 li a:hover, .tabControll2 .menu1 li a:hover {
+    color: #212121;
+    border-bottom: 3px solid #212121; /*граница кнопки при наведении*/ 
+}
+
+.tabControll .menu1 li a:active, .tabControll2 .menu1 li a:active {
+    color: #1e88e5;
+}
+
+.tabControll3 .menu1 li a:hover {
+    color: #212121;
+}
+
+.tabControll3 .menu1 li a:active {
+    color: #1e88e5;
+}
+
+.tabControll .exp, 
+.trendingProducts .exp, 
+.relatedProducts .exp {  
+    display: block;
+    text-decoration: none; /*убрали нижнее почеркивание*/
+    margin-top: 18px;
+    float: right;
+    color: #6c6c6c;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 3.6px;  /*расстояние между буквами*/
+    padding-right: 21px;    
+}
+
+.tabControll .exp:hover,
+.trendingProducts .exp:hover,
+.relatedProducts .exp:hover {  /*кнопка при наведении*/
+    background: url('images/arrow.png') no-repeat 175px 5px; /*цвет фона + стрелка + не повторять + отступ слева по х и сверху по y*/
+    color: #212121;
+}
+
+.tabControll .exp:active,
+.trendingProducts .exp:active,
+.relatedProducts .exp:active {
+    color: #1e88e5;
+}
+
+.menu2 {
+    display: flex;
+    justify-content: space-between;    
+    clear: both;
+}
+
+.menu2 a{
+    position: relative;
+    display: block;
+    width: 270px;
+    height: 270px;
+    margin-top: 68px;
+}
+
+.menu2 a div {
+    position: absolute;
+    display: none;
+    width: 270px;
+    height: 270px;
+    text-align: center;
+    background: #ffffff url(images/icon-hover.png) no-repeat 110px 62px;
+    opacity: 0.8;
+}
+
+.nameProduct {
+    margin-top: 129px;
+    text-align: center;
+    line-height: 29.88px;    
+    color: #212121;
+    font-size: 22px;
+    font-weight: 700;    
+    margin-bottom: 10px;
+}
+
+.shortDescr {      
+    width: 206px;
+    margin: 0 auto;
+    color: #6c6c6c;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 18px; 
+    letter-spacing: -0.2px;
+}
+
+.nameProduct: .shortDescr: .menu2 a:hover {
+    border: 1px solid #9c9c9c;
+    z-index: 100;
+    title: "text2";
+    content: "text1";
+}
+
+.menu2 a:hover div {
+    display: block;
+}
+
+/*----------------------promoProduct--------------------------------------*/
+
+.betweenBlocks {
+    margin-top: 120px;
+}
+.promoProduct {
+    height: 683px;
+}
+
+.promoProduct div{
+    float: left;
+    width: 683px;
+    height: 683px;    
+}
+
+.promoContent1 {   
+    background-image: url(images/promo-img1.jpg);    
+}
+
+.promoContent2 {    
+    background-image: url(images/promo-img2.jpg);    
+}
+
+.promoProduct h3 {
+    color: #1e88e5;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 48px;
+    text-transform: uppercase;
+    letter-spacing: 1.8px;
+    margin-top: 228px;
+    margin-left: 51px;    
+}
+
+.promoProduct h1{
+    height: 50px;
+    color: #212121;
+    font-family: Montserrat, sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    margin-left: 51px;
+}
+
+.promoProduct p {
+    width: 374px;
+    height: 100px;
+    color: #6c6c6c;
+    font-family: Montserrat, sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24.04px;
+    margin-left: 51px;
+}
+
+.promoProduct a {  /*кнопка ордер*/     
+    margin-left: 51px;
+}
+
+/*---------------------------trendingProducts  &  relatedProducts-----------------*/
+
+.trendingProducts{    
+    width: 1171px;
+    height: 869px;
+    margin: 0 auto;
+    margin-bottom: 120px;
+}
+
+.relatedProducts{    
+    width: 1171px;
+    height: 469px;
+    margin: 0 auto;
+    margin-bottom: 120px;
+}
+
+.catalogProducts { 
+    width: 1171px;
+    margin: 0 auto;
+    height: 1690px;
+    margin-bottom: 120px;
+}
+
+.trendingProducts h1,
+.relatedProducts h1 {
+    float: left;
+    color: #212121;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.menu3 {
+    position: absolute;
+    float: left;
+    width: 1200px;        
+}
+
+.trendingProducts .menu3,
+.relatedProducts .menu3{
+    margin-top: 98px;
+}
+
+.menu3 li {     
+    float: left;    
+    width: 370px;
+    height: 370px;
+    list-style-type: none;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+.menu3 li:hover {
+    outline: 1px solid #9c9c9c;
+}
+
+/*------------------hotDeals-----------------------*/
+
+.hotDeals{      
+    height: 800px;
+    background-image: url(images/slider.jpg);
+    padding-left: 98px;
+    margin-bottom: 120px;
+}
+
+.sliderContent2 {
+    width: 458px;  /*ширина блока текста слайдера*/ 
+    float: left;  
+    margin-top: 287px;  
+}
+
+.sliderContent2 h3 {   
+    color: #e53935;
+    font-size: 18px; 
+    font-weight: 700;
+    line-height: 48px; 
+    margin-bottom: 2px;
+}
+
+.sliderContent2 h1 {   
+    color: #212121;
+    font-size: 62px;
+    font-weight: 200;
+    line-height: 72px;    
+    text-transform: uppercase;  
+    letter-spacing: -3px;   /*расстояние между буквами*/
+    margin-bottom: 24px;
+}
+
+.sliderContent2 p {    
+    color: #6c6c6c;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+    text-align: left;
+    letter-spacing: -0.2px;  /*расстояние между буквами*/
+    margin-bottom: 27px;
+}
+
+/*---------------------------------------------------*/
+
+.load {
+    float: left;
+    margin-top: 1619px;
+    margin-left: 550px;
+    height: 70px;
+    width: 70px;
+}
+
+.load:hover {
+    background-image: url(images/back.svg);
+}
+
+.load:active {
+    background-image: url(images/back.svg);
+    transform: scale(1.2);
+}
+
+/*----------------------exclusiveProduct---------------------------------*/
+
+.exclusiveProduct {
+    width: 1170px;
+    height: 570px;
+    margin: 0 auto;
+    margin-bottom: 120px;
+}
+
+.sliderShort {
+    float: left;
+    width: 570px;
+    height: 570px;
+    background-image: url(images/product-1-lg.jpg);
+    display: block;    
+}
+
+.sliderContent3 {
+    width: 332px;  /*ширина блока текста слайдера*/ 
+    float: left;  
+    margin-top: 186px;
+    padding-left: 30px;
+}
+
+.sliderContent3 h3 {   
+    color: #1e88e5;
+    font-size: 18px; 
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+}
+
+.sliderContent3 h1 {   
+    color: #212121;
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+
+.sliderContent3 p {    
+    color: #6c6c6c;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+    text-align: left;
+    letter-spacing: -0.2px;  /*расстояние между буквами*/
+    margin-bottom: 27px;
+}
+
+.sliderShort2 {
+    position: absolute;
+    float: right;  
+    width: 600px;
+    height: 570px;
+    margin-left: 570px;    
+}   
+
+.menu4 li { 
+    float: left;    
+    width: 270px;
+    height: 270px;
+    list-style-type: none;
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+
+.menu4 li:hover {
+    outline: 1px solid #9c9c9c;
+}
+
+/*---------------mobileApp---------------------------------*/
+
+.mobileApp {
+    height: 516px;
+    background-image: url(images/back-img.jpg);
+    padding-left: 99px;
+}
+
+.mobileContent {    
+    width: 458px;  /*ширина блока текста слайдера*/ 
+    float: left;   /*блок не занимает всю ширину*/
+    margin-top: 125px;
+}
+
+.mobileContent h3 {     
+    color: #6c6c6c;
+    font-size: 18px; 
+    font-weight: 700;
+    line-height: 38px; 
+    text-transform: uppercase;  
+    letter-spacing: 1.8px;
+}
+
+.mobileContent h1 {  
+    color: #212121;
+    font-size: 62px;
+    font-weight: 200;
+    line-height: 68px;    
+    text-transform: uppercase;  
+    letter-spacing: -3px;   
+    margin-bottom: 10px;
+}
+
+.mobileContent p {    
+    color: #6c6c6c;
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 24px;
+    letter-spacing: -0.2px;  /*расстояние между буквами*/
+    margin-bottom: 33px;
+}
+
+.mobileIcon {
+    position: absolute;
+    margin-top: 360px;    
+}
+
+.mobileIcon a{
+    margin-right: 8px;
+}
+
+/*-----------------------------footer------------------------------------*/
+
+.footer{
+    height: 384px;    
+    background-color: #f7f7f7;    
+    margin: 0 auto;
+    width: 1366px;
+    margin-top: -384px;
+}
+
+.contactAs, .useful, .touch {    
+    position: absolute;
+    margin-top: 120px;        
+}
+
+.contactAs{
+    width: 221px;
+    height: 139px;
+    margin-left: 99px;    
+}
+
+.contactAs h3, .useful h3, .touch h3 {
+    color: #6c6c6c;    
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    text-transform: uppercase;   
+    letter-spacing: 1.8px;
+    margin-bottom: 14px
+}
+
+.contactAs h4, .touch h4 {    
+    height: 102px;
+    color: #212121;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+}
+
+.cop, .terms{
+    color: #6c6c6c;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 26px;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    position: absolute;
+    margin-top: 336px;
+}
+
+.cop {
+    margin-left: 99px;   
+}
+
+.terms {
+    margin-left: 919px;
+    width: 447px;
+}
+
+.useful {
+    width: 422px;
+    height: 101px;
+    margin-left: 398px; 
+}
+
+.links-1, .links-2 {
+    position: absolute;
+    margin-top: 157px;
+    color: #212121;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 26px;
+    text-transform: uppercase;
+    letter-spacing: 0.7px;
+}
+
+.links-1 {
+    margin-left: 398px;
+    width: 968px;
+}
+
+.links-2 {
+    margin-left: 633px;
+    width: 733px;
+}
+
+
+.touch {
+    width: 370px;
+    height: 147px;
+    margin-left: 898px; 
+    letter-spacing: -0.1px;  /*расстояние между буквами*/
+}
+
+.touch h4 {
+    height: 36px;
+    margin-bottom: 36px;
+}
+
+.adress {
+    float: left;
+    position: absolute;
+    margin-top: 219px;
+    margin-left: 898px;
+    width: 468px;
+}
+
+.post {
+    float: left;
+    width: 370px;
+    height: 46px;    
+    border: 1px solid #d9dee1;
+    background-color: #ffffff;
+}
+
+input[type="email"] {
+    color: #6c6c6c;
+    font-size: 14px;     
+    line-height: 22px;
+    padding-left: 19px;
+}
+
+input[type="email"]:focus{
+    font-size: 16px;    
+    color: #212121;
+    font-weight: 300;
+    outline: none;
+}
+
+.adress a {    
+    position: absolute;
+    width: 46px;
+    height: 46px;
+    right: 68px;
+    top: 16px;
+}
+
+.sub:hover {
+    transform: scale(1.1);/*увеличивает кнопку при наведении, отсебятина*/
+}
+
+.menu5 {
+    position: absolute;
+    margin-top: 326px;
+    margin-left: 618px;
+    width: 748px;
+}
+
+.menu5 li { 
+    float: left;
+    list-style-type: none;
+    margin-left: 6px;    
+}
+
+.menu5 li:hover {
+    transform: scale(1.1); /*увеличивает картинку, видно наведение на маленькую иконку, отсебятина*/
+}
+
+/*----------------interior-contact----------------------*/
+
+.contacts {
+    height: 370px;
+    width: 1170px;
+    margin: 0 auto;
+    margin-bottom: 120px;
+}
+
+.menu6 {
+    position: absolute;
+    float: left;
+    width: 1200px;        
+}
+
+.menu6 li {     
+    float: left;
+    width: 370px;
+    height: 370px;
+    list-style-type: none;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    outline: 1px solid #9c9c9c;
+}
+
+.menu6 li a {
+    display: block;    
+    text-decoration: none;
+}
+
+.menu6 li a:hover {
+    background-color: #ffffff;
+    opacity: 0.6;
+}
+
+.location {
+    width: 38px;
+    height: 48px;
+    margin-left: 166px;
+    margin-top: 48px;
+    margin-bottom: 32px;
+}
+
+.menu6Text {
+    text-align: center;
+}
+
+.menu6Text h2 {
+    color: #212121;
+    font-size: 22px;
+    font-weight: 700;    
+    text-transform: uppercase;
+    margin-bottom: 16px;
+}
+
+.light {
+    color: #6c6c6c;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+}
+
+.bold {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    color: #212121;
+    margin-bottom: 16px;
+}
+
+.uLight {
+    color: #6c6c6c;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+}
+
+.clr {
+    height: 384px;
+}
+
+/*-----------------------------------productDetails----------------*/
+
+.productDetails {
+    height: 896px;    
+    width: 1171px;
+    margin: 0 auto;
+}
+
+.productDetails div {
+    float: left;
+    width: 570px;
+    height: 896px;
+}
+
+.blockDetails__1 {
+    margin-right: 30px;    
+}
+
+.leaf2 {
+   margin-left: 160px;
+}
+
+.hotDeals .leaf { 
+    float: left;
+    position: absolute;
+    margin-top: 740px;   
+    margin-left: 525px;
+}
+
+.leaf2 li {
+    float: left;
+    list-style-type: none;
+    height: 70px;
+    width: 70px; 
+    margin-right: 10px;
+}
+
+.leaf2 li a:hover {
+    background-color: #ffffff;
+    opacity: 0.5;          
+}
+
+.blockDetails__2 {
+    text-align: center;
+}
+
+.blockDetails__2 h2 {
+    color: #212121;
+    font-size: 36px;
+    font-weight: 700;
+    margin-top: 47px;
+}
+
+.blockDetails__2 h3 {
+    color: #e53935;
+    letter-spacing: 1.8px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 48.02px;
+    text-transform: uppercase;
+}
+
+.blockDetails__2 h1 {
+    color: #212121;
+    font-size: 36px;
+    font-weight: 300;
+    line-height: 48.02px;
+    margin-top: 36px;
+}
+
+.blockDetails__2 p {
+    width: 480px;
+    margin-left: 45px;
+    color: #212121;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24.01px;
+    letter-spacing: 0.4px;
+    text-align: justify;
+    text-indent: 2em;
+}
+
+.price {
+    color: #212121;
+    font-size: 72px;
+    font-weight: 300
+}
+
+.blockDetails__2 a {
+    margin-left: 30px;
+    margin-top: 31px;
+    margin-bottom: 49px
+}
+
+.orderUsRed {  /*кнопка ордер*/
+    display: block;
+    width: 510px;
+    height: 71px;
+    box-shadow: 0 2px 5px 1px rgba(33, 33, 33, 0.35); /*тень*/
+    border-radius: 35px;    /*закругления кнопки*/
+    background-color: #f44336;
+    text-decoration: none; /*убрали нижнее почеркивание*/
+    text-align: center; /*текст по центру кнопки*/    
+    line-height: 71px;   /*выравнивание по высоте, высота строки такая же, каки высота блока кнопки*/ 
+    color: #ffffff;   /*цвет текста*/
+    font-size: 22px;  /*размер текста*/
+    font-weight: 700; /*жирность текста*/
+    text-transform: uppercase; /*все буквы верхний регистр*/
+    letter-spacing: 4.4px;  /*расстояние между буквами*/    
+}
+
+.orderUsRed:hover {  /*кнопка ордер при наведении*/
+    background: #f44336 url('images/arrowWhite.svg') no-repeat 350px 24px; /*цвет фона + стрелка + не повторять + отступ слева по х и сверху по y*/
+    box-shadow: none;
+}
+
+.orderUsRed:active {
+    color: #1e88e5;
+}
